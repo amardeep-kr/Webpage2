@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Static_WebPage</title>
+</head>
+
+<body>
+
+    <!-- ── Headings ── -->
+    <h1>Hello(h1)</h1>
+    <h2>Heading 2(h2)</h2>
+    <h3>Heading 3(h3)</h3>
+    <h4>Heading 4(h4)</h4>
+    <h5>Heading 5(h5)</h5>
+    <h6>Heading 6(h6)</h6>
+
+    <!-- ── Paragraph ── -->
+    <p>This is a paragraph. It contains paragraph of all the input in one single paragarph.</p>
+
+    <!-- ── Line Break & Horizontal Rule ── -->
+    <p>Line one.<br>Line two after a break.</p>
+    <hr><!-- ── A straight line  ── -->
+
+    <!-- ── Bold, Italic, Underline ── -->
+    <p><b>Bold text</b></p>
+    <p><i>Italic text</i></p>
+    <p><u>Underlined text</u></p>
+    <p><b><i>Bold and Italic</i></b></p>
+
+    <!-- ── Links ── -->
+    <a href="https://www.google.com">Go to Google</a>
+    <br>
+    <a href="https://www.google.com" target="_blank">Open Google in new tab</a>
+
+    <!-- ── Images ── -->
+    <img src="https://via.placeholder.com/300" alt="Placeholder Image" width="300">
+
+    <!-- ── Lists ── -->
+
+    <!-- Unordered List -->
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <h3>Ordered List</h3>
+    <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+
+    <!-- ── Tables ── -->
+    <h3>Table</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>25</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>30</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>22</td>
+                <td>Tokyo</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ── Forms ── -->
+    <h3>Form</h3>
+    <form>
+        <!-- Text input -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+        <!-- Email input -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <!-- Password input -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+        <!-- Radio buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Checkboxes -->
+        <label>Hobbies:</label><br>
+        <input type="checkbox" id="coding" name="hobbies" value="coding">
+        <label for="coding">Coding</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+        <label for="gaming">Gaming</label><br><br>
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+        </select><br><br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40" placeholder="Write something..."></textarea><br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+        <button type="reset">Reset</button>
+    </form>
+
+    <!-- ── Div and Span ── -->
+    <h3>Div and Span</h3>
+    <div style="background-color: lightblue; padding: 10px;">
+        This is a div block element.
+        <span style="color: red;">This is a span inline element.</span>
+    </div>
+
+    <!-- ── Semantic HTML ── -->
+    <h3>Semantic Elements</h3>
+
+    <header>
+        <h1>Website Header</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Section Title</h2>
+            <p>This is a section inside main content.</p>
+        </section>
+
+        <article>
+            <h2>Article Title</h2>
+            <p>This is an article element used for self-contained content.</p>
+        </article>
+
+        <aside>
+            <p>This is an aside — used for side content like ads or related links.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>This is the footer. &copy; 2024 My Website</p>
+    </footer>
+
+</body>
+</html>
