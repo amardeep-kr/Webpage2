@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn CSS</title>
+    <style>
+
+        /* ── CSS Syntax ──
+           selector {
+               property: value;
+           }
+        */
+
+        /* ── Universal Selector ── */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ── Body ── */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* ── Colors ── */
+        .color-demo {
+            background-color: lightblue;    /* color name */
+            color: #ff0000;                 /* hex */
+            border: 2px solid rgb(0,128,0); /* rgb */
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        /* ── Text Styling ── */
+        .text-demo {
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            text-decoration: underline;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 1.6;
+            color: #444;
+            padding: 10px;
+        }
+
+        /* ── Box Model ── */
+        /* content → padding → border → margin */
+        .box-model {
+            width: 300px;
+            height: 100px;
+            padding: 20px;           /* space inside border */
+            border: 3px solid black; /* border */
+            margin: 20px auto;       /* space outside border, auto = center */
+            background-color: lightyellow;
+        }
+
+        /* ── Display ── */
+        .block-demo {
+            display: block;
+            background-color: lightcoral;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        .inline-demo {
+            display: inline;
+            background-color: lightgreen;
+            padding: 5px;
+        }
+
+        .inline-block-demo {
+            display: inline-block;
+            background-color: lightsalmon;
+            width: 150px;
+            height: 50px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* ── Flexbox ── */
+        .flex-container {
+            display: flex;
+            justify-content: space-between; /* horizontal alignment */
+            align-items: center;            /* vertical alignment */
+            background-color: #ddd;
+            padding: 10px;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .flex-item {
+            background-color: steelblue;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1; /* each item takes equal space */
+            text-align: center;
+        }
+
+        /* ── Grid ── */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .grid-item {
+            background-color: mediumseagreen;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* ── Position ── */
+        .position-relative {
+            position: relative;
+            background-color: lightgray;
+            height: 100px;
+            margin: 10px 0;
+        }
+
+        .position-absolute {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: tomato;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* ── Border ── */
+        .border-demo {
+            border: 2px solid red;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 10px 0;
+            width: 200px;
+        }
+
+        /* ── Background ── */
+        .background-demo {
+            background-color: navy;
+            background-image: url('https://picsum.photos/800/200');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 200px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        /* ── Shadows ── */
+        .shadow-demo {
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+            padding: 20px;
+            margin: 10px 0;
+            background: white;
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        .text-shadow-demo {
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            font-size: 28px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        /* ── Pseudo-classes ── */
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        button {
+            background-color: steelblue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        button:active {
+            transform: scale(0.97);
+        }
+
+        /* ── Transitions ── */
+        .transition-demo {
+            background-color: coral;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        .transition-demo:hover {
+            background-color: darkred;
+            transform: scale(1.05);
+        }
+
+        /* ── CSS Variables ── */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --font-size-large: 24px;
+        }
+
+        .variable-demo {
+            background-color: var(--primary-color);
+            color: white;
+            font-size: var(--font-size-large);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .variable-demo span {
+            color: var(--secondary-color);
+        }
+
+        /* ── Responsive Design / Media Queries ── */
+        .responsive-box {
+            background-color: purple;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .responsive-box {
+                background-color: darkorange;
+            }
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* ── Section Headers ── */
+        .section-title {
+            background-color: #333;
+            color: white;
+            padding: 8px 16px;
+            margin: 20px 0 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <h1 style="text-align:center; padding: 20px 0;">Learn CSS</h1>
+
+    <!-- Colors -->
+    <p class="section-title">Colors</p>
+    <div class="color-demo">This box uses color name, hex, and rgb values.</div>
+
+    <!-- Text Styling -->
+    <p class="section-title">Text Styling</p>
+    <div class="text-demo">Styled text example</div>
+
+    <!-- Box Model -->
+    <p class="section-title">Box Model (content + padding + border + margin)</p>
+    <div class="box-model">I am a box with padding, border and margin.</div>
+
+    <!-- Display -->
+    <p class="section-title">Display: block, inline, inline-block</p>
+    <div class="block-demo">Block element (full width)</div>
+    <span class="inline-demo">Inline 1</span>
+    <span class="inline-demo">Inline 2</span>
+    <span class="inline-demo">Inline 3</span>
+    <br><br>
+    <div class="inline-block-demo">Inline-block 1</div>
+    <div class="inline-block-demo">Inline-block 2</div>
+    <div class="inline-block-demo">Inline-block 3</div>
+
+    <!-- Flexbox -->
+    <p class="section-title">Flexbox</p>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+
+    <!-- Grid -->
+    <p class="section-title">CSS Grid</p>
+    <div class="grid-container">
+        <div class="grid-item">Grid 1</div>
+        <div class="grid-item">Grid 2</div>
+        <div class="grid-item">Grid 3</div>
+        <div class="grid-item">Grid 4</div>
+        <div class="grid-item">Grid 5</div>
+        <div class="grid-item">Grid 6</div>
+    </div>
+
+    <!-- Position -->
+    <p class="section-title">Position (relative + absolute)</p>
+    <div class="position-relative">
+        I am relative.
+        <div class="position-absolute">Absolute</div>
+    </div>
+
+    <!-- Border -->
+    <p class="section-title">Border & Border Radius</p>
+    <div class="border-demo">Rounded border box</div>
+
+    <!-- Background -->
+    <p class="section-title">Background Image</p>
+    <div class="background-demo">Background Image</div>
+
+    <!-- Shadows -->
+    <p class="section-title">Box Shadow & Text Shadow</p>
+    <div class="shadow-demo">Box shadow effect</div>
+    <div class="text-shadow-demo">Text Shadow</div>
+
+    <!-- Hover & Pseudo-classes -->
+    <p class="section-title">Pseudo-classes (:hover, :active)</p>
+    <a href="#">Hover over this link</a><br><br>
+    <button>Hover me</button>
+
+    <!-- Transitions -->
+    <p class="section-title">Transitions</p>
+    <div class="transition-demo">Hover for smooth transition</div>
+
+    <!-- CSS Variables -->
+    <p class="section-title">CSS Variables</p>
+    <div class="variable-demo">Primary color box with <span>secondary color text</span></div>
+
+    <!-- Media Queries -->
+    <p class="section-title">Responsive / Media Queries (resize window to see change)</p>
+    <div class="responsive-box">I change color on mobile screens!</div>
+
+</div>
+
+</body>
+</html>
