@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn CSS</title>
+    <link rel="stylesheet" href="learn_css.css">
+    <!-- Icons - Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Learn CSS</h1>
+
+    <!-- ── 1. Syntax ── -->
+    <h2 class="section-title">1. CSS Syntax</h2>
+    <p class="syntax-demo">CSS syntax: selector curly brace property colon value semicolon</p>
+
+    <!-- ── 2. Comments ── -->
+    <h2 class="section-title">2. Comments</h2>
+    <!-- This is an HTML comment -->
+    <p class="comment-demo">CSS comments are written inside /* */ and are not displayed.</p>
+
+    <!-- ── 3. Selectors ── -->
+    <h2 class="section-title">3. Selectors</h2>
+    <!-- Element selector -->
+    <p>Element selector (targets all p tags)</p>
+    <!-- Class selector -->
+    <p class="class-selector">Class selector (.class-selector)</p>
+    <!-- ID selector -->
+    <p id="id-selector">ID selector (#id-selector)</p>
+    <!-- Universal selector -->
+    <p class="universal-note">Universal selector (*) applies to everything</p>
+    <!-- Grouping selector -->
+    <p class="group1">Grouping selector - group1</p>
+    <p class="group2">Grouping selector - group2</p>
+
+    <!-- ── 4. Class in HTML Elements ── -->
+    <h2 class="section-title">4. Class in HTML Elements</h2>
+    <p class="highlight">Single class applied</p>
+    <p class="highlight bold-text">Multiple classes applied</p>
+    <div class="box blue-box">Blue box using two classes</div>
+    <div class="box red-box">Red box using two classes</div>
+
+    <!-- ── 5. Backgrounds ── -->
+    <h2 class="section-title">5. Backgrounds</h2>
+    <div class="bg-color">Background color</div>
+    <div class="bg-image">Background image</div>
+    <div class="bg-repeat">Background repeat</div>
+    <div class="bg-fixed">Background fixed attachment</div>
+    <div class="bg-shorthand">Background shorthand</div>
+
+    <!-- ── 6. Margins ── -->
+    <h2 class="section-title">6. Margins</h2>
+    <div class="margin-demo">All sides margin: 30px</div>
+    <div class="margin-sides">Top:10px Right:20px Bottom:30px Left:40px</div>
+    <div class="margin-auto">margin: auto (centered)</div>
+
+    <!-- ── 7. Borders ── -->
+    <h2 class="section-title">7. Borders</h2>
+    <div class="border-solid">Solid border</div>
+    <div class="border-dashed">Dashed border</div>
+    <div class="border-dotted">Dotted border</div>
+    <div class="border-double">Double border</div>
+    <div class="border-radius-demo">Rounded border (border-radius)</div>
+    <div class="border-sides">Border on specific sides only</div>
+
+    <!-- ── 8. Height & Width ── -->
+    <h2 class="section-title">8. Height and Width</h2>
+    <div class="hw-fixed">Fixed: width 300px height 80px</div>
+    <div class="hw-percent">Width 50% of parent</div>
+    <div class="hw-minmax">min-width and max-width demo — resize the window</div>
+
+    <!-- ── 9. Outlines ── -->
+    <h2 class="section-title">9. Outlines</h2>
+    <div class="outline-solid">Solid outline (outside the border)</div>
+    <div class="outline-dashed">Dashed outline</div>
+    <div class="outline-offset">Outline with offset</div>
+    <input class="outline-input" type="text" placeholder="Input with custom outline on focus">
+
+    <!-- ── 10. Styling Text ── -->
+    <h2 class="section-title">10. Styling Text</h2>
+    <p class="text-color">Text color</p>
+    <p class="text-align-center">Text align center</p>
+    <p class="text-align-right">Text align right</p>
+    <p class="text-decoration">Text decoration underline</p>
+    <p class="text-transform-upper">text transform uppercase</p>
+    <p class="text-transform-lower">TEXT TRANSFORM LOWERCASE</p>
+    <p class="text-indent">This paragraph has a text indent on the first line. Lorem ipsum dolor sit amet.</p>
+    <p class="letter-spacing">Letter spacing increased</p>
+    <p class="line-height">Line height increased.<br>Second line looks more spaced out.</p>
+    <p class="word-spacing">Word    spacing    increased</p>
+    <p class="text-shadow-demo">Text with shadow effect</p>
+
+    <!-- ── 11. Fonts ── -->
+    <h2 class="section-title">11. Fonts</h2>
+    <p class="font-family-sans">Font family: Arial sans-serif</p>
+    <p class="font-family-google">Google Font: Playfair Display</p>
+    <p class="font-size-demo">Font size: 24px</p>
+    <p class="font-weight-demo">Font weight: bold (700)</p>
+    <p class="font-style-italic">Font style: italic</p>
+    <p class="font-shorthand">Font shorthand: italic bold 20px Roboto</p>
+
+    <!-- ── 12. Icons ── -->
+    <h2 class="section-title">12. Icons (Font Awesome)</h2>
+    <i class="fa-solid fa-house icon-demo"></i>
+    <i class="fa-solid fa-user icon-demo"></i>
+    <i class="fa-solid fa-envelope icon-demo"></i>
+    <i class="fa-solid fa-heart icon-demo" style="color:red;"></i>
+    <i class="fa-brands fa-github icon-demo"></i>
+    <i class="fa-brands fa-youtube icon-demo" style="color:red;"></i>
+    <br><br>
+    <p><i class="fa-solid fa-phone"></i> +1 234 567 890</p>
+    <p><i class="fa-solid fa-location-dot"></i> Helsinki, Finland</p>
+
+    <!-- ── 13. Tables ── -->
+    <h2 class="section-title">13. Tables</h2>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>25</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>30</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>22</td>
+                <td>Tokyo</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ── 14. Display & Visibility ── -->
+    <h2 class="section-title">14. Display and Visibility</h2>
+    <div class="display-block">display: block (full width)</div>
+    <span class="display-inline">display: inline</span>
+    <span class="display-inline">display: inline</span>
+    <br><br>
+    <div class="display-inline-block">inline-block 1</div>
+    <div class="display-inline-block">inline-block 2</div>
+    <br><br>
+    <div class="display-none">display: none (you cannot see this)</div>
+    <div class="visibility-hidden">visibility: hidden (takes space but invisible)</div>
+    <div class="after-hidden">This appears after the hidden element above</div>
+
+    <!-- ── 15. Combinators ── -->
+    <h2 class="section-title">15. Combinators</h2>
+
+    <!-- Descendant combinator (space) -->
+    <div class="descendant-parent">
+        <p>Direct child paragraph (descendant)</p>
+        <div>
+            <p>Nested paragraph (also descendant)</p>
+        </div>
+    </div>
+
+    <!-- Child combinator (>) -->
+    <div class="child-parent">
+        <p>Direct child only</p>
+        <div>
+            <p>Not a direct child — not styled</p>
+        </div>
+    </div>
+
+    <!-- Adjacent sibling (+) -->
+    <h3 class="adjacent-trigger">Adjacent sibling trigger (h3)</h3>
+    <p class="adjacent-sibling">I am the adjacent sibling (immediately after h3)</p>
+    <p>I am NOT the adjacent sibling</p>
+
+    <!-- General sibling (~) -->
+    <h3 class="general-trigger">General sibling trigger (h3)</h3>
+    <p class="general-sibling">Sibling 1 after h3</p>
+    <p class="general-sibling">Sibling 2 after h3</p>
+
+    <!-- ── 16. Dropdown Menu ── -->
+    <h2 class="section-title">16. Dropdown Menu</h2>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <div class="dropdown">
+            <a href="#">Services ▾</a>
+            <div class="dropdown-content">
+                <a href="#">Web Design</a>
+                <a href="#">Development</a>
+                <a href="#">SEO</a>
+            </div>
+        </div>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- ── 17. Attribute Selectors ── -->
+    <h2 class="section-title">17. Attribute Selectors</h2>
+
+    <!-- [attr] -->
+    <input type="text" placeholder="[type] selector targets this">
+    <br><br>
+
+    <!-- [attr=value] -->
+    <input type="submit" value="Submit Button">
+    <input type="text" placeholder="Text input">
+    <br><br>
+
+    <!-- [attr^=value] starts with -->
+    <a href="https://google.com" class="attr-link">https link (starts with https)</a><br>
+    <a href="http://example.com" class="attr-link">http link</a><br><br>
+
+    <!-- [attr*=value] contains -->
+    <p class="attr-contains-demo" title="hello world">This p has title containing "world"</p>
+
+    <!-- [attr$=value] ends with -->
+    <a href="document.pdf" class="attr-link">Download PDF (ends with .pdf)</a>
+
+</body>
+</html>

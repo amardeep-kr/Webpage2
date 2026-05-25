@@ -1,0 +1,637 @@
+/* ============================================
+   Learn CSS - Complete Course Code
+   ============================================ */
+
+/* ── Universal Selector ── */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ── Body ── */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+    color: #222;
+}
+
+/* Section titles */
+.section-title {
+    background-color: #333;
+    color: white;
+    padding: 8px 16px;
+    margin: 30px 0 15px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* ============================================
+   1. CSS Syntax
+   ============================================ */
+/* selector { property: value; } */
+.syntax-demo {
+    background-color: lightyellow;
+    padding: 10px;
+    border-left: 4px solid orange;
+}
+
+/* ============================================
+   2. Comments
+   ============================================ */
+/* This is a CSS comment - it is not displayed in the browser */
+.comment-demo {
+    color: gray;
+    font-style: italic;
+    padding: 10px;
+}
+
+/* ============================================
+   3. Selectors
+   ============================================ */
+
+/* Element selector */
+p {
+    margin: 8px 0;
+}
+
+/* Class selector */
+.class-selector {
+    color: blue;
+    font-weight: bold;
+}
+
+/* ID selector */
+#id-selector {
+    color: green;
+    font-weight: bold;
+}
+
+/* Grouping selector */
+.group1,
+.group2 {
+    background-color: lavender;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* ============================================
+   4. Class in HTML Elements
+   ============================================ */
+.highlight {
+    background-color: yellow;
+    padding: 5px 10px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.box {
+    width: 200px;
+    height: 60px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-weight: bold;
+}
+
+.blue-box {
+    background-color: steelblue;
+}
+
+.red-box {
+    background-color: tomato;
+}
+
+/* ============================================
+   5. Backgrounds
+   ============================================ */
+.bg-color {
+    background-color: lightcoral;
+    padding: 20px;
+    margin: 5px 0;
+    border-radius: 6px;
+}
+
+.bg-image {
+    background-image: url('https://picsum.photos/800/100');
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    margin: 5px 0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black;
+}
+
+.bg-repeat {
+    background-image: url('https://picsum.photos/50/50');
+    background-repeat: repeat;
+    height: 80px;
+    margin: 5px 0;
+    border-radius: 6px;
+}
+
+.bg-fixed {
+    background-image: url('https://picsum.photos/800/200');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100px;
+    margin: 5px 0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Background shorthand: color image repeat position/size attachment */
+.bg-shorthand {
+    background: navy url('https://picsum.photos/800/100') no-repeat center/cover;
+    height: 80px;
+    margin: 5px 0;
+    border-radius: 6px;
+}
+
+/* ============================================
+   6. Margins
+   ============================================ */
+.margin-demo {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 30px;  /* all sides */
+}
+
+.margin-sides {
+    background-color: lightgreen;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    /* shorthand: margin: 10px 20px 30px 40px; (top right bottom left) */
+}
+
+.margin-auto {
+    background-color: lightsalmon;
+    padding: 10px;
+    width: 300px;
+    margin: 10px auto; /* centers the element */
+    text-align: center;
+}
+
+/* ============================================
+   7. Borders
+   ============================================ */
+.border-solid {
+    border: 3px solid #333;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.border-dashed {
+    border: 3px dashed tomato;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.border-dotted {
+    border: 3px dotted steelblue;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.border-double {
+    border: 6px double green;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.border-radius-demo {
+    border: 2px solid purple;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.border-sides {
+    border-top: 3px solid red;
+    border-bottom: 3px solid blue;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+/* ============================================
+   8. Height and Width
+   ============================================ */
+.hw-fixed {
+    width: 300px;
+    height: 80px;
+    background-color: orchid;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+    border-radius: 6px;
+}
+
+.hw-percent {
+    width: 50%;
+    background-color: mediumseagreen;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+}
+
+.hw-minmax {
+    min-width: 200px;
+    max-width: 600px;
+    background-color: darkorange;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+}
+
+/* ============================================
+   9. Outlines
+   ============================================ */
+/* Outline is drawn OUTSIDE the border, does not affect layout */
+
+.outline-solid {
+    outline: 3px solid red;
+    padding: 10px;
+    margin: 12px 0;
+}
+
+.outline-dashed {
+    outline: 3px dashed blue;
+    padding: 10px;
+    margin: 12px 0;
+}
+
+.outline-offset {
+    outline: 3px solid green;
+    outline-offset: 8px; /* gap between border and outline */
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.outline-input {
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 300px;
+    outline: none; /* removes default blue outline */
+}
+
+.outline-input:focus {
+    outline: 3px solid orange;
+    outline-offset: 2px;
+}
+
+/* ============================================
+   10. Styling Text
+   ============================================ */
+.text-color {
+    color: darkblue;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-decoration {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.text-transform-upper {
+    text-transform: uppercase;
+}
+
+.text-transform-lower {
+    text-transform: lowercase;
+}
+
+.text-indent {
+    text-indent: 40px;
+}
+
+.letter-spacing {
+    letter-spacing: 4px;
+}
+
+.line-height {
+    line-height: 2.5;
+}
+
+.word-spacing {
+    word-spacing: 15px;
+}
+
+.text-shadow-demo {
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* ============================================
+   11. Fonts
+   ============================================ */
+.font-family-sans {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-family-google {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.font-size-demo {
+    font-size: 24px;
+}
+
+.font-weight-demo {
+    font-weight: 700;
+}
+
+.font-style-italic {
+    font-style: italic;
+}
+
+/* Font shorthand: style weight size/line-height family */
+.font-shorthand {
+    font: italic bold 20px/1.6 'Roboto', sans-serif;
+}
+
+/* ============================================
+   12. Icons
+   ============================================ */
+.icon-demo {
+    font-size: 28px;
+    margin: 0 8px;
+    color: #333;
+}
+
+/* ============================================
+   13. Tables
+   ============================================ */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.styled-table th,
+.styled-table td {
+    border: 1px solid #ddd;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+.styled-table thead tr {
+    background-color: #333;
+    color: white;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* ============================================
+   14. Display and Visibility
+   ============================================ */
+.display-block {
+    display: block;
+    background-color: lightcoral;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.display-inline {
+    display: inline;
+    background-color: lightgreen;
+    padding: 5px;
+    margin: 3px;
+}
+
+.display-inline-block {
+    display: inline-block;
+    background-color: steelblue;
+    color: white;
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+/* display: none removes element completely from layout */
+.display-none {
+    display: none;
+}
+
+/* visibility: hidden hides element but keeps its space */
+.visibility-hidden {
+    visibility: hidden;
+    background-color: orange;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.after-hidden {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* ============================================
+   15. Combinators
+   ============================================ */
+
+/* Descendant combinator (space) - targets ALL nested p inside div */
+.descendant-parent p {
+    color: darkgreen;
+    background-color: #e8f5e9;
+    padding: 5px;
+    margin: 4px 0;
+}
+
+.descendant-parent {
+    border: 2px solid darkgreen;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+/* Child combinator (>) - targets ONLY direct children */
+.child-parent > p {
+    color: darkblue;
+    background-color: #e3f2fd;
+    padding: 5px;
+}
+
+.child-parent {
+    border: 2px solid darkblue;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+/* Adjacent sibling (+) - targets element IMMEDIATELY after */
+.adjacent-trigger + .adjacent-sibling {
+    background-color: #fff3e0;
+    color: darkorange;
+    padding: 5px;
+    border-left: 4px solid darkorange;
+}
+
+/* General sibling (~) - targets ALL siblings after */
+.general-trigger ~ .general-sibling {
+    background-color: #fce4ec;
+    color: darkred;
+    padding: 5px;
+    border-left: 4px solid darkred;
+    margin: 4px 0;
+}
+
+/* ============================================
+   16. Dropdown Menu
+   ============================================ */
+.navbar {
+    background-color: #333;
+    overflow: visible;
+    padding: 0;
+    display: flex;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 18px;
+    transition: background-color 0.2s;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #666;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ============================================
+   17. Attribute Selectors
+   ============================================ */
+
+/* [attr] - elements that have the attribute */
+input[type] {
+    padding: 8px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* [attr=value] - exact match */
+input[type="submit"] {
+    background-color: steelblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+/* [attr^=value] - starts with */
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+
+a[href^="http:"] {
+    color: orange;
+}
+
+/* [attr*=value] - contains */
+p[title*="world"] {
+    background-color: lightyellow;
+    padding: 6px;
+    border-left: 4px solid gold;
+}
+
+/* [attr$=value] - ends with */
+a[href$=".pdf"] {
+    color: red;
+}
+
+a[href$=".pdf"]::after {
+    content: " 📄";
+}
+
+.attr-link {
+    display: block;
+    margin: 4px 0;
+}

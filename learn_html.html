@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn HTML</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://github.com/amardeep-kr.png">
+</head>
+<body>
+
+    <h1>Learn HTML</h1>
+
+    <!-- ── 1. Headings ── -->
+    <h2>1. Headings</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- ── 2. Paragraphs ── -->
+    <h2>2. Paragraphs</h2>
+    <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>This is another paragraph.<br>This is on a new line using a line break.</p>
+    <hr>
+
+    <!-- ── 3. Text Formatting ── -->
+    <h2>3. Text Formatting</h2>
+    <p><b>Bold text</b></p>
+    <p><i>Italic text</i></p>
+    <p><u>Underlined text</u></p>
+    <p><strong>Strong (important) text</strong></p>
+    <p><em>Emphasized text</em></p>
+    <p><mark>Highlighted text</mark></p>
+    <p><small>Small text</small></p>
+    <p><del>Deleted text</del></p>
+    <p><ins>Inserted text</ins></p>
+    <p>H<sub>2</sub>O (subscript)</p>
+    <p>x<sup>2</sup> (superscript)</p>
+
+    <!-- ── 4. Links ── -->
+    <h2>4. Links</h2>
+
+    <!-- Create a link -->
+    <a href="https://www.google.com">Go to Google</a>
+    <br>
+
+    <!-- Open in new tab -->
+    <a href="https://www.google.com" target="_blank">Open Google in new tab</a>
+    <br>
+
+    <!-- Absolute URL (full address) -->
+    <a href="https://www.github.com">Absolute URL - GitHub</a>
+    <br>
+
+    <!-- Relative URL (within same project) -->
+    <a href="learn_css.html">Relative URL - Go to CSS page</a>
+    <br>
+
+    <!-- Link to email -->
+    <a href="mailto:amardeep@example.com">Send Email</a>
+    <br>
+
+    <!-- Link with title (tooltip on hover) -->
+    <a href="https://www.google.com" title="This will take you to Google">Link with Title (hover me)</a>
+
+    <!-- ── 5. Title & Favicon ── -->
+    <h2>5. Title and Favicon</h2>
+    <p>The page title is set in the <code>&lt;title&gt;</code> tag inside <code>&lt;head&gt;</code>.</p>
+    <p>The favicon is set using <code>&lt;link rel="icon"&gt;</code> inside <code>&lt;head&gt;</code>.</p>
+    <p>Check the browser tab — you can see the title "Learn HTML" and a favicon!</p>
+
+    <!-- ── 6. Images ── -->
+    <h2>6. Images</h2>
+    <img src="https://github.com/amardeep-kr.png" alt="GitHub Profile" width="150">
+    <br>
+    <img src="https://picsum.photos/300/200" alt="Random Image" width="300">
+
+    <!-- ── 7. Tables ── -->
+    <h2>7. Tables</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <caption>Student Table</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>25</td>
+                <td>New York</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>30</td>
+                <td>London</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>22</td>
+                <td>Tokyo</td>
+                <td>A+</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">End of table</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- ── 8. Table Data (colspan & rowspan) ── -->
+    <h2>8. Table Data - colspan and rowspan</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th colspan="2">Full Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>First</td>
+            <td>Last</td>
+            <td rowspan="2">25</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+        </tr>
+    </table>
+
+    <!-- ── 9. Lists ── -->
+    <h2>9. Lists</h2>
+
+    <!-- Unordered list -->
+    <h3>Unordered List</h3>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <!-- Ordered list -->
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Learn HTML</li>
+        <li>Learn CSS</li>
+        <li>Learn JavaScript</li>
+    </ol>
+
+    <!-- Ordered list types -->
+    <ol type="A">
+        <li>Type A</li>
+        <li>Type B</li>
+        <li>Type C</li>
+    </ol>
+
+    <ol type="i">
+        <li>Roman i</li>
+        <li>Roman ii</li>
+        <li>Roman iii</li>
+    </ol>
+
+    <!-- Description list -->
+    <h3>Description List</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language — used to structure web pages</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets — used to style web pages</dd>
+        <dt>JavaScript</dt>
+        <dd>Programming language used to make web pages interactive</dd>
+    </dl>
+
+    <!-- ── 10. Block and Inline Elements ── -->
+    <h2>10. Block and Inline Elements</h2>
+
+    <!-- Block elements take full width -->
+    <div style="background-color: lightblue; padding: 10px; margin: 5px 0;">
+        I am a DIV — block element (takes full width)
+    </div>
+    <p style="background-color: lightgreen; padding: 10px;">
+        I am a P tag — block element
+    </p>
+
+    <!-- Inline elements only take needed width -->
+    <span style="background-color: yellow; padding: 5px;">Span 1 (inline)</span>
+    <span style="background-color: orange; padding: 5px;">Span 2 (inline)</span>
+    <a href="#">Link (inline)</a>
+
+    <!-- ── 11. Iframes ── -->
+    <h2>11. Iframes</h2>
+    <p>Embedding another webpage inside this page:</p>
+    <iframe
+        src="https://www.wikipedia.org"
+        width="600"
+        height="300"
+        title="Wikipedia">
+    </iframe>
+    <br><br>
+    <p>Embedding a YouTube video:</p>
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/nu_pCVPKzTk"
+        title="freeCodeCamp Full Stack Course"
+        allowfullscreen>
+    </iframe>
+
+    <!-- ── 12. Symbols ── -->
+    <h2>12. Symbols (HTML Entities)</h2>
+    <p>&copy; Copyright</p>
+    <p>&reg; Registered</p>
+    <p>&trade; Trademark</p>
+    <p>&amp; Ampersand</p>
+    <p>&lt; Less than</p>
+    <p>&gt; Greater than</p>
+    <p>&nbsp; Non-breaking space</p>
+    <p>&euro; Euro</p>
+    <p>&pound; Pound</p>
+    <p>&hearts; Hearts</p>
+    <p>&star; Star</p>
+    <p>&#128512; Emoji using code</p>
+
+    <!-- ── 13. HTML Forms ── -->
+    <h2>13. HTML Forms</h2>
+    <form action="submit_page.html" method="POST">
+
+        <!-- Text input -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+        <!-- Email input -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <!-- Password input -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+
+        <!-- Number input -->
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" max="120"><br><br>
+
+        <!-- Date input -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <!-- Radio buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Checkboxes -->
+        <label>14. Checkboxes - Hobbies:</label><br>
+        <input type="checkbox" id="coding" name="hobbies" value="coding">
+        <label for="coding">Coding</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label><br>
+        <input type="checkbox" id="gaming" name="hobbies" value="gaming" checked>
+        <label for="gaming">Gaming (pre-checked)</label><br><br>
+
+        <!-- Dropdown select -->
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="">-- Select Country --</option>
+            <option value="india">India</option>
+            <option value="finland">Finland</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select><br><br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40" placeholder="Write your message..."></textarea><br><br>
+
+        <!-- File upload -->
+        <label for="file">Upload File:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+
+        <!-- 15. Submit button -->
+        <input type="submit" value="Submit Form">
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <!-- ── 16. Form Action ── -->
+    <h2>16. Form Action</h2>
+    <p>The <code>action</code> attribute tells the form where to send data when submitted.</p>
+    <code>&lt;form action="submit_page.html" method="POST"&gt;</code>
+
+    <!-- ── 17. Submit Method ── -->
+    <h2>17. Submit Method (GET vs POST)</h2>
+    <p><b>GET:</b> Data is sent in the URL (visible). Good for search forms.</p>
+    <form action="" method="GET">
+        <input type="text" name="search" placeholder="Search...">
+        <input type="submit" value="Search (GET)">
+    </form>
+    <br>
+    <p><b>POST:</b> Data is sent in the request body (hidden). Good for login/signup forms.</p>
+    <form action="" method="POST">
+        <input type="text" name="username" placeholder="Username">
+        <input type="submit" value="Submit (POST)">
+    </form>
+
+    <!-- ── 18. Setting Up HTML Locally ── -->
+    <h2>18. Setting Up HTML Locally</h2>
+    <p>To set up HTML locally you need:</p>
+    <ol>
+        <li>A code editor like <b>VS Code</b> — <a href="https://code.visualstudio.com" target="_blank">Download here</a></li>
+        <li>Install the <b>Live Server</b> extension in VS Code</li>
+        <li>Create a new file with <b>.html</b> extension</li>
+        <li>Right-click the file → <b>Open with Live Server</b></li>
+    </ol>
+
+    <!-- ── Semantic HTML ── -->
+    <h2>19. Semantic HTML</h2>
+    <header>
+        <h1>Website Header</h1>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">About</a> |
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Section</h2>
+            <p>A section groups related content together.</p>
+        </section>
+
+        <article>
+            <h2>Article</h2>
+            <p>An article is self-contained content like a blog post.</p>
+        </article>
+
+        <aside>
+            <p>Aside — used for side content like ads or tips.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Amardeep. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
